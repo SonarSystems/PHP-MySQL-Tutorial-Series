@@ -1,1 +1,1 @@
-# PHP-MySQL-Tutorial-Series
+# PHP MySQL Tutorial Series
