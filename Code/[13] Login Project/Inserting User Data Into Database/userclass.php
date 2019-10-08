@@ -13,7 +13,14 @@ class User
     
     public function Register( $username, $password, $confirmPassword, $email )
     {
+        $fields = array
+        (
+            "username" => array( ":username" => $username ),
+            "password" => array( ":password" => $password ),
+            "email" => array( ":email" => $email ),
+        );
         
+        $this->db->Insert( "users", $fields );
     }
 }
 
