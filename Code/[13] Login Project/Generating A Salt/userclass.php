@@ -8,7 +8,7 @@ class User
     
     public function __construct( )
     {
-        $this->db = new Database( "localhost", "sonarsys_admin", "127.0.0.1", "sonarsys_tutorial" );
+        $this->db = new Database( "localhost", "root", "", "LoginProject" );
     }
     
     public function Register( $username, $password, $confirmPassword, $email )
